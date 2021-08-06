@@ -1,4 +1,5 @@
-<?php declare(strict_types = 1);
+<?php
+
 /**
  * @author      Mohammed Moussaoui
  * @copyright   Copyright (c) Mohammed Moussaoui. All rights reserved.
@@ -18,7 +19,7 @@ class Installer extends LibraryInstaller
         $prettyName = explode('/', $package->getPrettyName());
         $name       = array_pop($prettyName);
 
-        return 'vendor/devnet/templates/'.$name;
+        return 'vendor/devnet/templates/' . $name;
     }
 
     public function supports($packageType)
